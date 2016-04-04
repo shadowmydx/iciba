@@ -1,0 +1,18 @@
+{
+	"name": "IciBa",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "author:wmydx",
+	"content_scripts" : [
+
+    {
+			"matches" : ["http://*/*", "https://*/*"],
+      "css": ["css/tooltip.css"],
+			"js" : ["lib/jquery.js", "lib/simpletip.js", "src/main.js"],
+			"run_at" : "document_end"
+		}
+	],
+  "permissions": [
+    "http://*/*"
+  ]
+}
