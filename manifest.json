@@ -13,7 +13,7 @@
 		}
 	],
 	"background": {
-		"scripts": ["lib/jquery.js", "src/background.js"]
+		"scripts": ["lib/jquery.js", "lib/util.js", "src/background.js"]
 	},
 	"web_accessible_resources": ["image/**"],
   "permissions": [
