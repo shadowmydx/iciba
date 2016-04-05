@@ -8,10 +8,14 @@
     {
 			"matches" : ["http://*/*", "https://*/*"],
       "css": ["css/tooltip.css"],
-			"js" : ["lib/jquery.js", "lib/simpletip.js", "src/main.js"],
+			"js" : ["lib/jquery.js", "lib/util.js", "src/main.js"],
 			"run_at" : "document_end"
 		}
 	],
+	"background": {
+		"scripts": ["lib/jquery.js", "src/background.js"]
+	},
+	"web_accessible_resources": ["image/**"],
   "permissions": [
     "http://*/*"
   ]
