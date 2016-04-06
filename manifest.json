@@ -2,12 +2,17 @@
 	"name": "IciBa",
 	"version": "1.0",
 	"manifest_version": 2,
-	"description": "author:wmydx",
+	"description": "author: shadowmydx --- You could find me in GitHub",
   "browser_action": {
     "default_icon": "image/dictionary.png",
     "default_title": "WmydxDict",
     "default_popup": "html/popup.html"
   },
+	"icons": {
+		"16": "image/dictionary.png",
+		"48": "image/dictionary.png",
+		"128": "image/dictionary.png"
+	},
 	"content_scripts" : [
 
     {
@@ -23,6 +28,7 @@
 	"web_accessible_resources": ["image/**"],
   "permissions": [
     "http://*/*",
-    "tabs"
+    "tabs",
+		"activeTab"
   ]
 }
